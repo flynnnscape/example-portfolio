@@ -1,0 +1,278 @@
+body {
+    font-family: 'Segoe UI', sans-serif;
+}
+
+h1,
+h2 {
+    font-weight: 700;
+}
+
+.card {
+    border-radius: 20px;
+    overflow: hidden;
+}
+
+.navbar-brand {
+    font-size: 1.3rem;
+}
+
+
+.custom-navbar {
+    background: transparent;
+    transition: background 0.4s ease, backdrop-filter 0.4s ease;
+    padding: 15px 0;
+}
+
+.custom-navbar.scrolled {
+    background: rgba(0, 0, 0, 0.7);
+    backdrop-filter: blur(8px);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.navbar-brand {
+    font-size: 1.6rem;
+}
+
+.brand-primary {
+    color: #fff;
+}
+
+.brand-accent {
+    color: #ffcc00;
+}
+
+.nav-link {
+    color: #f1f1f1 !important;
+    font-weight: 500;
+    margin-left: 10px;
+    transition: all 0.3s ease;
+}
+
+.nav-link:hover {
+    color: #ffcc00 !important;
+    transform: scale(1.05);
+}
+
+
+.about-section {
+    background: linear-gradient(to right, #f9f9f9, #fff);
+}
+
+.section-title {
+    font-weight: bold;
+    font-size: 2.5rem;
+    position: relative;
+    left: 145px;
+    display: inline-block;
+}
+
+.section-title::after {
+    content: '';
+    position: absolute;
+    left: 50%;
+    bottom: -10px;
+    transform: translateX(-50%);
+    width: 60px;
+    height: 4px;
+    background: #ff9800;
+    border-radius: 2px;
+}
+
+
+.about-img {
+    max-width: 280px;
+    width: 100%;
+    height: 280px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 5px solid #ff9800;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+    transition: transform 0.4s ease;
+}
+
+.about-img:hover {
+    transform: scale(1.05);
+}
+
+.about-text {
+    background: #ffffff;
+    border-left: 6px solid #ff9800;
+    animation: fadeInUp 1.2s ease;
+}
+
+@keyframes fadeInUp {
+    0% {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.hero {
+    min-height: 90vh;
+    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+        url('../img/hero-bg.jpg') no-repeat center center/cover;
+    position: relative;
+}
+
+.hero-title {
+    animation: fadeInDown 1.5s ease;
+}
+
+.highlight {
+    background: linear-gradient(45deg, #ffcc00, #ff6600);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.btn-hero {
+    background: #ffcc00;
+    color: #000;
+    font-weight: bold;
+    border-radius: 30px;
+    transition: all 0.3s ease;
+}
+
+.btn-hero:hover {
+    background: #ff6600;
+    color: #fff;
+    transform: scale(1.1);
+}
+
+
+@keyframes fadeInDown {
+    0% {
+        opacity: 0;
+        transform: translateY(-30px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+
+.sub-hero {
+    min-height: 60vh;
+    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+        url('../img/friends-bg.jpg') no-repeat center center/cover;
+    position: relative;
+}
+
+.sub-hero-title {
+    animation: fadeInDown 1.2s ease;
+}
+
+.friend-img {
+    height: 280px;
+    width: 100%;
+    object-fit: cover;
+    transition: transform 0.4s ease, box-shadow 0.4s ease;
+}
+
+.friend-card {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    background: #fff;
+}
+
+.friend-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 12px 25px rgba(0, 0, 0, 0.25);
+}
+
+.friend-card .card-title {
+    font-size: 1.3rem;
+}
+
+.friend-card .card-text {
+    font-size: 1rem;
+    color: #555;
+}
+
+.family-img {
+    height: 280px;
+    width: 100%;
+    object-fit: cover;
+    transition: transform 0.4s ease, box-shadow 0.4s ease;
+}
+
+.family-card {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.family-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 12px 25px rgba(0, 0, 0, 0.2);
+}
+
+.family-card .card-title {
+    font-size: 1.3rem;
+}
+
+.family-card .card-text {
+    font-size: 1rem;
+    color: #555;
+}
+
+
+.love-img {
+    width: 100%;
+    height: 400wpx;
+    object-fit: cover;
+    border-radius: 20px;
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.25);
+    transition: transform 0.4s ease, box-shadow 0.4s ease;
+}
+
+.love-img:hover {
+    transform: scale(1.05);
+    box-shadow: 0 12px 28px rgba(0, 0, 0, 0.4);
+}
+
+.love-text {
+    border-left: 6px solid #ff4d6d;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.love-text:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+}
+
+.highlight {
+    color: #ff4d6d;
+    font-weight: bold;
+}
+
+.church-img {
+    height: 400px;
+    width: 100%;
+    object-fit: cover;
+    transition: transform 0.4s ease, box-shadow 0.4s ease;
+}
+
+.church-img:hover {
+    transform: scale(1.05);
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.25);
+}
+
+.church-text {
+    border-left: 6px solid #0d6efd;
+
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.church-text:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+}
+
+.highlight {
+    color: #0d6efd;
+    font-weight: bold;
+}
